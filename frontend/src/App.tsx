@@ -9,7 +9,6 @@ import CostCalculation from './components/CostCalculation';
 
 function App() {
   return (
-   
       <BrowserRouter>
        <div className="App">
       <Header />
