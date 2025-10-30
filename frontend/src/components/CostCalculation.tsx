@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CostCalculation() {
+const CostCalculation = () => {
   return (
     <div>
       CostCalculation
