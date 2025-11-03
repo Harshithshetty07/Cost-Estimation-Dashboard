@@ -5,20 +5,24 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import CostCalculation from './components/CostCalculation';
+import InformationPage from './utils/InformationPage';
 
 
 function App() {
   return (
       <BrowserRouter>
-       <div className="App">
+       <div className="">
       <Header />
       <Outlet/>
-      <Routes>
-        <Route  path='/' element={<CostCalculation/>}></Route>
+      <div className='container mx-auto'>
+        <Routes>
+        <Route  path='/' element={<InformationPage/>}></Route>
         <Route  path='/home' element={<Home/>}></Route>
         <Route  path='/about' element={<About/>}></Route>
         <Route  path='/contact' element={<Contact/>}></Route>
       </Routes>
+      </div>
+      
           </div>
 
       </BrowserRouter>
